@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Sportivo y Cultural</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="img/Logo.png" alt="Logo del club">
+            <h2>Sportivo y Cultural</h2>
+        </div>
+
+        <nav>
+            <a href="#inicio" class="activo">Inicio</a>
+            <a href="#socios">Socios</a>
+            <a href="#cuotas">Cuotas</a>
+            <a href="#usuarios">Usuarios</a>
+            <a href="#pagos">Pagos</a>
+            <a href="#comprobantes">Comprobantes</a>
+        </nav>
+
+    </aside>
+
+    <main class="contenido">
+
+        <header>
+            <h1>Panel de administración</h1>
+            <p>Sistema de gestión de socios</p>
+        </header>
+
+        <section id="inicio" class="bienvenida">
+            <h2>¡Bienvenido!</h2>
+            <p>Gestioná la información del Club Sportivo y Cultural.</p>
+        </section>
+
+        <section class="resumen">
+
+            <article class="tarjeta">
+                <h3>Socios</h3>
+                <p>15 registrados</p>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Cuotas</h3>
+                <p>15 registradas</p>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Usuarios</h3>
+                <p>16 registrados</p>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Pagos</h3>
+                <p>15 registrados</p>
+            </article>
+
+        </section>
+
+        <!-- SECCION DE SOCIOS -->
+
+        <section id="socios" class="seccion">
+
+            <div class="encabezado-seccion">
+                <div>
+                    <h2>Gestión de socios</h2>
+                    <p>Consultá y administrá los socios del club.</p>
+                </div>
+
+                <button class="boton-principal">+ Nuevo socio</button>
+            </div>
+
+            <div class="formulario">
+
+                <h3>Registrar nuevo socio</h3>
+
+                <form>
+                    <div class="campos">
+
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Ingresar nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label>Apellido</label>
+                            <input type="text" placeholder="Ingresar apellido">
+                        </div>
+
+                        <div class="campo">
+                            <label>DNI</label>
+                            <input type="text" placeholder="Ingresar DNI">
+                        </div>
+
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input type="text" placeholder="Ingresar teléfono">
+                        </div>
+
+                        <div class="campo">
+                            <label>Email</label>
+                            <input type="email" placeholder="Ingresar email">
+                        </div>
+
+                        <div class="campo">
+                            <label>Estado</label>
+                            <select>
+                                <option>Activo</option>
+                                <option>Inactivo</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="boton-principal">
+                        Guardar socio
+                    </button>
+                </form>
+
+            </div>
+
+            <div class="tabla-contenedor">
+
+                <h3>Listado de socios</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Apellido</th>
+                            <th>Nombre</th>
+                            <th>DNI</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Gómez</td>
+                            <td>Juan</td>
+                            <td>30123456</td>
+                            <td>3548123456</td>
+                            <td>juan@gmail.com</td>
+                            <td><span class="estado activo">Activo</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Pérez</td>
+                            <td>María</td>
+                            <td>32123456</td>
+                            <td>3548765432</td>
+                            <td>maria@gmail.com</td>
+                            <td><span class="estado activo">Activo</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Rodríguez</td>
+                            <td>Lucas</td>
+                            <td>33123456</td>
+                            <td>3548112233</td>
+                            <td>lucas@gmail.com</td>
+                            <td><span class="estado inactivo">Inactivo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
